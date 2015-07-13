@@ -51,5 +51,7 @@ a small dataset if you prefer) and adapt your views to be able to work with the 
 ### Additional Resources:
 
 [Star Wars API](http://swapi.co)
+
 [Retrieving the `method` verb in a django view](https://docs.djangoproject.com/en/1.8/ref/request-response/#django.http.HttpRequest.method)
+
 [Naming RESTful resources](http://www.restapitutorial.com/lessons/restfulresourcenaming.html)
