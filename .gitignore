@@ -1,0 +1,4 @@
+.direnv/
+__pycache__/
+db.sqlite3
+.idea/
