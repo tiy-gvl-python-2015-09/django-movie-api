@@ -19,6 +19,8 @@ from django.contrib import admin
 from movie.views import MovieListView, MovieCreateView, MovieDeleteView, MovieDetailView
 
 urlpatterns = [
+    #url(r'^', include('api.urls')),
+    url(r'^api/', include('api_framework.urls')),
     url(r'^movie_list/', MovieListView.as_view(), name="movie_list"),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^create_movie/', MovieCreateView.as_view(), name="create_movie"),
