@@ -15,11 +15,13 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from rest_framework.authtoken import views
 
 from movie.views import MovieListView, MovieCreateView, MovieDeleteView, MovieDetailView
 
 urlpatterns = [
     #url(r'^', include('api.urls')),
+    url(r'^api-token-auth/', views.obtain_auth_token),
     url(r'^api/', include('api_framework.urls')),
     url(r'^movie_list/', MovieListView.as_view(), name="movie_list"),
     url(r'^admin/', include(admin.site.urls)),
